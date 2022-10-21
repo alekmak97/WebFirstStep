@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Адаптация под Windows браузеры -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Масштабирование для различных устройств -->
+    <title>Моя первая страница</title>
+    <link rel="stylesheet" href="test2.css">
+    <!-- Импорт стилей -->
+</head>
+<body>
+
+    <!-- div - блочный элемент сюда можно помещать другие элементы -->
+    <div class="header" style="height: 200px;">
+        <!-- style - не обязателен, всё в css, но он приоритетнее чем css -->
+        <div class="logo">
+            <h1>IShop</h1>
+            <!-- Используется только один раз -->
+        </div> 
+    </div>
+    
+
+    <div class="content">
+        <div class="container">
+            <div class="item img">
+                <!-- двойной класс - модификатор для которого указать отдельные настройки, модификаторы имеют больший приоритет -->
+                <!-- img - скрывает картинку и нужно прописывать её -->
+                <img class="item-pic" src="img/product-1.jpg" alt="товар">
+                <!-- прописываем картинку и добавляем кнопку -->
+                <div class="button abs">Купить</div>
+            </div>
+            <div class="item">
+                <div class="button">Купить</div>
+            </div>
+            <div class="item">
+                <div class="button">Купить</div>
+            </div>
+            <div class="item">
+                <div class="button">Купить</div>
+            </div>
+            <div class="item">
+                <div class="button">Купить</div>
+            </div>
+            <div class="item last">
+                <div class="button">Купить</div>
+            </div>
+        </div>
+    </div>
+    
+
+    <div class="footer">
+        <a class="footer-link" href="test3.html">
+            <p class="description">Переход</p>
+        </a>
+    </div>
+
+
+
+
+</body>
+</html>
+

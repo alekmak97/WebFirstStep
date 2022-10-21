@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+/* Исключение всех отступов, лучше не использовать затрудняет работу браузеров */
+}
+
+/* . - обращение к классу */
+.header {
+    height: 200px;
+    background-color: #ccc;
+    display: flex;
+} 
+ 
+.logo {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(210, 132, 29);
+    margin-top: 40px;
+    margin-left: 40px;
+    /* Марджины вместе с блоком flex в хедере */
+}
+
+.item {
+    /* Блоки для картинок и кнопок */
+    width: 300px;
+    height: 350px;
+    border: 1px solid #000;
+    margin-bottom: 50px;
+    /* отступы снизу от картинок */
+    border-radius: 10px;
+    /* скругление углов */
+    background-image: url(img/product-1.jpg);
+    /* в блоке будет использоваться картинка */
+    background-repeat: no-repeat;
+    /* картинка в стандартном виде для окна, чтобы фон не заполнялся */
+    background-size: cover;
+    /* картинка на рамку, картинка растягивается на рамку */
+    position: relative;
+    /* для кнопки abs */
+}
+
+.container {
+    /* Центрирование по центру */
+    width: 1140px;
+    margin: 0 auto;
+    /* одинаковые отступы со всех сторон */
+    display: flex;
+    /* засовываем все элементы в коробку */
+    flex-wrap: wrap;
+    /* перенос картинок согласно размерам */
+    justify-content: space-between;
+    /* равномерное распределение контента */
+}
+
+.content {
+    /* отступ сверху от картинок */
+    margin: 100px 0;
+}
+
+.footer {
+    height: 200px;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* Центрирование контента */
+}
+
+.button {
+    width: 100px;
+    height: 40px;
+    background-color: rgb(82, 12, 82);
+    color: #fff;
+    text-align: center;
+    line-height: 40px;
+    margin: 200px auto 0;
+    border-radius: 10px;
+}
+
+
+.button:hover {
+    /* подсвечивание фона / смена его */
+    background-color: #fff;
+    color:  rgb(82, 12, 82);
+    border: 1px solid  rgb(82, 12, 82);
+    /* рамочка */
+}
+
+.footer-link {
+    text-decoration: none;
+    /* убрать декорацию подчеркивания ссылки */
+}
+
+
+.description {
+    color: rgb(82, 12, 82);
+    font-size: 50px;
+    font-weight: bold;
+    /*жирный шрифт*/
+}
+
+.description:hover {
+    color:rgb(210, 132, 29)
+}
+
+.bg {
+    background-color: rgb(48, 46, 46);
+}
+
+.img {
+    background-image: none;
+}
+
+.abs {
+    position: absolute;
+    top: 196px;
+    left: 88px;
+    z-index: 1000;
+    margin: 0;
+}
+
+
+.item-pic {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
