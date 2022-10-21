@@ -1,0 +1,44 @@
+p {
+ color: darkred;
+ width: 500px;
+ border: 1px solid black;
+}
+
+li,h4 {
+ font-size: 16px;
+ line-height: 2;
+ letter-spacing: 1px;
+ color: red;
+}
+
+span#identified {
+  color: blue;
+  font-family: 'Fuzzy&Bubbles', cursive; /* https://fonts.google.com/ */
+}
+
+html {
+ background-color: #FFEFD5;
+ font-size: 15px; /* px значит 'пиксели': базовый шрифт будет 10 пикселей в высоту */
+ font-family: 'Roboto', sans-serif;
+}
+
+body {
+ width: 600px;
+ margin: 0 auto;
+ background-color: #FFE4B5;
+ padding: 35px 25px 25px 0px;
+ border: border: 12px solid white;
+}
+
+h1 {
+	font-size: 50px;
+	text-align: center;
+	margin: 0;
+	padding: 20px 0;
+	text-shadow: 2px 2px 1 px white;
+}
+
+img {
+	display: block;
+	margin: 0 auto;
+}
