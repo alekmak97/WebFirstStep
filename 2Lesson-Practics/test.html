@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js"></script>
+    <title>JavaScript</title>
+</head>
+<body>
+    <!-- Скрипты лучше всего вниз ставить, чтобы основное быстрее грузилось -->
+    <script>
+        let mes = EnterData();
+        showMessage(mes);
+        let s = sum();
+        showMessage(s);
+        let name = "Vasya";
+        alert(`Привет, ${name}!`); // Ковычки именно такие д.б.
+        
+        let userName = 'Алевтина';
+        function showMessage1() {
+            let message = 'Привет, ' + userName;
+            alert(message);
+        }
+        showMessage1();
+
+        if (confirm("Вы уверены?")) {
+            alert("Мы рады, что Вы уверены!");
+        } else {
+            alert("Жаль, что Вы не уверены...");
+        }
+
+        let t = some(s);
+        sw(t);
+        
+    </script>
+</body>
+</html>
